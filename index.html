@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iintoo</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./normalize.css">
+</head>
+<body>
+<section class="container">
+    <div class="left-container">
+        <img src="img/logo.svg" alt="Логотип компании iintoo" class="logo">
+    </div>
+    <div class="right-container">
+        <div class="right-container__title">Get iinto it today</div>
+        <div class="right-container__text">There is no charge or obligation upon registration</div>
+        <div class="button-container">
+            <button class="button button-facebook">Register with Facebook</button>
+            <button class="button button-linkedin">Register with Instagram</button>
+        </div>
+        <div class="line">
+            <span class="line-text">Or</span>
+        </div>
+        <div class="info">
+            <label class="info__input">Email<input type="email" name="email"></label>
+            <label class="info__input">Phone<input type="tel" name="phone"></label>
+        </div>
+        <div class="investor">
+            <div class="investor__title">What type of investor are you?</div>
+            <div class="investor__text">Select the type of investor you are below.</div>
+            <div class="investor-radio">
+                <div class="investor-radio__btn">
+                    <input type="radio" class="real-radio" name="investor" value="Individual" id="individual" hidden>
+                    <label for="individual">Individual</label>
+                    <span class="tooltip">
+                        <button class="tooltip-toggle" type="button">
+                            <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path fill="#eeeeee" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                        </button>
+                        <span class="tooltip-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
+                    </span>
+                </div>
+                <div class="investor-radio__btn">
+                    <input type="radio" class="real-radio" name="investor" value="Business" id="business" hidden>
+                    <label for="business">Business</label>
+                    <span class="tooltip">
+                        <button class="tooltip-toggle" type="button">
+                            <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path fill="#eeeeee" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                        </button>
+                        <span class="tooltip-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
+                    </span>
+                </div>
+                <div class="investor-radio__btn">
+                    <input type="radio" class="real-radio" name="investor" value="IRA" id="ira" hidden>
+                    <label for="ira">IRA</label>
+                    <span class="tooltip">
+                        <button class="tooltip-toggle" type="button">
+                            <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path fill="#eeeeee" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                        </button>
+                        <span class="tooltip-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
+                    </span>
+                </div>
+                <div class="investor-radio__btn">
+                    <input type="radio" class="real-radio" id="trust" name="investor"  value="Trust"hidden>
+                    <label for="trust"> Trust</label>
+                    <span class="tooltip">
+                        <button class="tooltip-toggle" type="button">
+                            <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path fill="#eeeeee" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                        </button>
+                        <span class="tooltip-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="notification">
+            <input type="checkbox" id="notification" class="notification__checkbox" hidden>
+            <label for="notification" class="notification__text">I agree to the terms and receiving notifications from iinto <a href="#">View full terms</a></label>
+        </div>
+        <button class="button btn-submit" type="submit">Create Account</button>
+    </div>
+</section>
+
+</body>
+</html>

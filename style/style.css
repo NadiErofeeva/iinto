@@ -1,0 +1,404 @@
+@font-face {
+    font-family: Barlow;
+    font-weight: 400;
+    src: url("../fonts/Barlow-Regular.otf");
+}
+
+@font-face {
+    font-family: Barlow;
+    font-weight: 700;
+    src: url("../fonts/Barlow-Bold.otf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Barlow;
+    font-weight: 400;
+    color: #2A4A5C;
+
+}
+
+.button {
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    width: 240px;
+    text-align: start;
+}
+
+.container {
+    display: flex;
+
+
+    padding: 50px;
+
+    background-color: #EFF6FF;
+
+    max-width: 1400px;
+}
+
+.left-container {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #345ac5;
+    background-size: cover;
+
+    width: 650px;
+}
+
+.logo {
+    max-width: 100px;
+    max-height: 40px;
+    margin: 40px;
+
+    object-fit: contain;
+}
+
+.right-container {
+    background-color: #fff;
+    padding: 120px 70px;
+    width: 650px;
+}
+
+.right-container__title {
+    font-weight: 700;
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+.right-container__text {
+    color: #AFAFAF;
+    font-size: 18px;
+
+    margin-bottom: 40px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+
+}
+
+.button-facebook {
+    display: flex;
+    align-items: center;
+
+    background-color: #255A9B;
+
+    padding: 7px 0px 7px 10px;
+    text-align: start;
+
+}
+
+.button-facebook:hover {
+    background-color: #3698FB;
+}
+
+.button-facebook::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 17px;
+    margin-right: 10px;
+    text-align: center;
+    background-image: url("../img/facebook.svg");
+    background-size: 15px 17px;
+    background-repeat: no-repeat;
+}
+
+.button-linkedin {
+    display: flex;
+    align-items: center;
+
+    background-color: #0076B6;
+    padding: 7px 0px 7px 10px;
+}
+
+.button-linkedin:hover {
+    background-color: #3698FB;
+}
+
+.button-linkedin::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 17px;
+    margin-right: 15px;
+    text-align: center;
+    background-image: url("../img/linkedin.svg");
+    background-size: 15px 17px;
+    background-repeat: no-repeat;
+}
+
+.line {
+    width: 300px;
+    font-size: 12px;
+    color: #2A4A5C;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-align: center;
+    position: relative;
+
+    margin: 0 auto 25px;
+}
+
+.line-text {
+    background: #fff;
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+}
+
+.line::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #f3f4f2;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.info__input {
+    font-family: Barlow;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #AFAFAF;
+
+    font-size: 14px;
+    color: #96A5B1;
+    padding: 2px 7px 10px;
+    width: 240px;
+}
+
+.info__input:hover {
+    border-left: 1px solid #345ac5;
+}
+
+.info__input input{
+    border: none;
+    outline: none !important;
+    padding-top: 7px;
+}
+
+.investor {
+    margin-bottom: 100px;
+}
+.investor__title {
+    font-weight: 700;
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+.investor__text {
+    color: #AFAFAF;
+    font-size: 16px;
+}
+
+.investor-radio {
+    display: flex;
+}
+
+
+.investor-radio__btn {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.investor-radio__btn label {
+    cursor: pointer;
+}
+
+.investor-radio__btn label {
+    position: relative;
+    padding-left: 25px;
+
+    font-weight: 700;
+
+}
+.investor-radio__btn label::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF;
+    border: 2px solid #EEEEEE;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: text-top;
+    cursor: pointer;
+    left: 0;
+}
+.investor-radio__btn label::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF;
+    border: 4px solid #3698FB;
+    border-radius: 50%;
+
+    position: absolute;
+    left: -2px;
+    top: -1px;
+
+    display: none;
+}
+
+.real-radio:checked + label::before {
+    display: inline-block;
+}
+.real-radio:checked + label::after {
+    display: none;
+}
+
+
+.tooltip-toggle {
+    padding: 0;
+    margin: 0;
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+
+}
+
+.tooltip {
+    position: relative;
+}
+
+
+.tooltip-toggle:hover .tooltip-icon path {
+    fill: #3698FB;
+}
+
+.tooltip-text {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #FFFFFF;
+    color: #AFAFAF;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: none;
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    display: none;
+    width: 256px;
+    box-shadow: 3px 3px 10px 3px #AFAFAF;
+
+    z-index: 1
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+    display: block;
+}
+
+.notification {
+    margin-bottom: 60px;
+}
+
+.notification__text {
+    position: relative;
+    padding-left: 20px;
+
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #AFAFAF;
+}
+
+.notification__text::after {
+    content: '';
+
+    position: absolute;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #FFFFFF;
+    border: 2px solid #EEEEEE;
+    margin-right: 5px;
+    vertical-align: text-top;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+}
+
+.notification__text::before {
+    content: '';
+
+    position: absolute;
+
+    width: 10px;
+    height: 10px;
+
+    background-color: #3698FB;
+    border-color: #3698FB;
+    margin-right: 5px;
+    vertical-align: text-top;
+    cursor: pointer;
+    top: 3px;
+    left: 3px;
+    z-index: 1;
+    display: none;
+
+}
+
+.notification__checkbox:checked + label::before {
+    display: inline-block;
+}
+
+.notification__checkbox:checked + label::after {
+    border-color: #3698FB;
+}
+
+.notification__text a {
+    color: #3698FB;
+}
+
+
+.btn-submit {
+    background-color: #3698FB;
+    color: #FFFFFF;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 15px 50px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #1468b9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
